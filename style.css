@@ -29,14 +29,14 @@ section {
   border-radius: 5vh;
   background-color: rgb(42, 165, 159);
   /* here we're adding a standard CSS animation but we're setting the play state to paused*/
-  animation: circleShake 1s ease-in-out infinite;
+  animation: circleShake 10s ease-in-out infinite;
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state */
   animation-play-state: paused;
 }
 
 @keyframes circleShake {
   0% {
-    transform: translateX(1vh);
+    transform: translateX(10vh);
   }
   20% {
     transform: translateX(-1vh);
