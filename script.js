@@ -60,3 +60,19 @@ function animateThree() {
 function animateFour() {
   //
 }
+
+const delay = 1500;
+let locked = false;
+
+window.addEventListener("mousemove", (e) => {
+  // if this set 
+  if(!locked){
+    logChange(e);
+    locked = true;
+    setTimeout(() => {locked = false}, delay);
+  }
+});
+
+function logChange(e){
+  console.log(e)
+}
